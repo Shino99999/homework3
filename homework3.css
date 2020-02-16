@@ -1,0 +1,161 @@
+#top {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#touch-left {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#touch-left p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 50px;
+}
+
+#touch-right {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#touch-right p {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    font-size: 50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#ul_img {
+    text-align: center;
+    z-index: 10;
+}
+
+li {
+    list-style: none;
+}
+
+.a_img {
+    height: 600px;
+    width: 900px;
+}
+
+#columns {
+    text-align: center;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    padding-bottom: 100px;
+}
+
+.col {
+    display: inline-block;
+    width: 30%;
+    border: solid 3px #555;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: left;
+}
+
+.learn {
+    border-radius: 10px;
+    border-color: white;
+    background-color: #0066FF;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.learn:hover {
+    background-color: #003366;
+    cursor: pointer;
+}
+
+.click {
+    width: 85%;
+    border: solid 2px #BBB;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.center button{
+    width: 80%;
+    box-shadow: 2px 2px #555;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.center button {
+    cursor: pointer;
+}
+
+.closed {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    #touch-left {
+        background-color: rgba(0,0,0,0);
+        color: black;
+    }
+
+    #touch-right {
+        background-color: rgba(0,0,0,0);
+        color: black;
+    }
+
+    #columns {
+        width: 80%;
+        height: 900px;
+        text-align: left;
+    }
+
+    .col {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #columns {
+        height: 1400px;
+        text-align: center;
+    }
+
+    .col {
+        width: 80%; 
+    }
+}
